@@ -1,0 +1,48 @@
+{
+  "name": "grunt-ie9-selector-counter",
+  "description": "A simple grunt wrapper arount xzyfer/ie9-selector-counter",
+  "version": "0.0.0",
+  "homepage": "https://github.com/xzyfer/grunt-ie9-selector-counter",
+  "author": {
+    "name": "xzyfer",
+    "email": "xzyfer@gmail.com",
+    "url": "http://xzyfer.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xzyfer/grunt-ie9-selector-counter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xzyfer/grunt-ie9-selector-counter/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/xzyfer/grunt-ie9-selector-counter/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt": "~0.4.1",
+    "grunt-release": "~0.3.3"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "dependencies": {
+    "ie9-selector-counter": "0.0.4",
+    "grunt": "~0.4.1"
+  }
+}
