@@ -1,7 +1,7 @@
 {
   "name": "grunt-ie9-selector-counter",
   "description": "A simple grunt wrapper arount xzyfer/ie9-selector-counter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/xzyfer/grunt-ie9-selector-counter",
   "author": {
     "name": "xzyfer",
