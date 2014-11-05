@@ -16,24 +16,26 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('ie9_selector_counter', 'Validate CSS files with IE9 selector counter.', function() {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({}),
-      fileCount = 0;
+        success = 0, failure = 0;
 
     // Iterate over all specified file groups.
     this.files.forEach(function(f) {
       // Concat specified files.
       f.src.map(function(filepath) {
-        fileCount++;
         // Run validation
         var count = counter.count(filepath);
         if(count > 4095) {
           grunt.log.error(filepath + ' has ' + (count - 4096) + ' too many selectors');
+          failure++;
         } else {
+          success++;
           grunt.verbose.ok(filepath + ' has ' + count + ' selectors');
         }
       });
     });
 
-    grunt.log.ok(fileCount + ' file' + (fileCount === 1 ? '' : 's') + ' are error free.');
+    grunt.log.ok(success + ' file' + (success === 1 ? '' : 's') + ' are error free.');
+    return failure === 0;
   });
 
 };
