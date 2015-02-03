@@ -28,7 +28,7 @@ module.exports = function(grunt) {
         if(count > 4095) {
           grunt.log.error(filepath + ' has ' + (count - 4096) + ' too many selectors');
         } else {
-          grunt.verbose.ok(filepath + ' has ' + count + ' selectors');
+          grunt.log.ok(filepath + ' has ' + count + ' selectors');
         }
       });
     });
